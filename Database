@@ -1,8 +1,37 @@
 First Create a Account Koyeb Then create a Database 
+
 Then copy a Database Dajango Api etc 
+
 Then Install  pip install  psycopg2-binary 
+
 Then run these Cammand python manage.py migrate
+
 Then create a Superuser 
+
 Then install pip install gunicorn
+
 Then install pip install whitenoise 
-Then open 
+
+Then open setting.py then import os  then Paste These code          STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
+
+Then open is website https://whitenoise.readthedocs.io/en/latest/django.html  
+
+Then paste This code "whitenoise.middleware.WhiteNoiseMiddleware",  in MIDDLEWARE = [
+    # ...
+    "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
+    # ...
+]
+
+
+Then paste these code 
+STORAGES = {
+    # ...
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
+
+in setting.py
+
+Then These Cammanad pip freeze > requirements.txt 

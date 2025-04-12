@@ -12,7 +12,7 @@ Then install pip install gunicorn
 
 Then install pip install whitenoise 
 
-Then open setting.py then import os  then Paste These code          STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
+Then open setting.py then import os  then Paste These code       STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 
 Then open is website https://whitenoise.readthedocs.io/en/latest/django.html  
 

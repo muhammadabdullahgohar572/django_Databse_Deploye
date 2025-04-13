@@ -1,1 +1,31 @@
+first install cloudnary  pip install cloudinary
 
+
+pher  insatll_app  ma "cloudinary" ko paste karo 
+
+then import 
+
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
+
+then config
+
+
+cloudinary.config(
+    cloud_name="",
+    api_key="",
+    api_secret=""
+)
+
+
+
+
+model ma 
+
+from cloudinary.models import CloudinaryField  # Note the correct capitalization
+
+
+
+   
